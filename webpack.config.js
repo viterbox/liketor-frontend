@@ -20,14 +20,23 @@ const config = {
 	module: {
 		rules: [
 			{
-				test: /\.js$/, // Check for all js files
+				// test: /\.js$/, // Check for all js files
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
+				/* loader: 'babel-loader',
+				query: {
+					presets: ['babel-preset-es2015', 'babel-preset-react'].map(require.resolve),
+				},*/
 				use: [{
 					loader: 'babel-loader',
 					options: { presets: ['es2015', 'react'] },
 				}],
 			},
 		],
+	},
+
+	resolve: {
+		extensions: ['.js', '.jsx'],
 	},
 
 	devtool: 'eval-source-map', // Default development sourcemap
