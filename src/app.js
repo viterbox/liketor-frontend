@@ -1,6 +1,8 @@
-import _ from 'lodash';
 
-const array = [1];
-const other = _.concat(array, 2, [3], [[4]]);
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Main from './components/Main';
 
-alert(other); // [1, 2, 3, [4]]
+window.React = React;
+
+ReactDOM.render(<Main />, document.getElementById('app'));
