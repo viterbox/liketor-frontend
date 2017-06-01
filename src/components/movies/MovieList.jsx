@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'react-prop-types';
 import Movie from './Movie';
 
 function MovieList({ movies }) {
@@ -8,7 +9,7 @@ function MovieList({ movies }) {
 }
 
 MovieList.propTypes = {
-  movies: React.PropTypes.arrayOf.isRequired,
+  movies: PropTypes.arrayOf.isRequired,
 };
 
 export default MovieList;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'react-prop-types';
 
 function Movie({ title }) {
   return (
@@ -7,7 +8,7 @@ function Movie({ title }) {
 }
 
 Movie.propTypes = {
-  title: React.PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Movie;
