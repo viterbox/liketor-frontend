@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Movie extends Component {
-	render() {
-		const { title } = this.props;
-		return (
-			<li>
-				{ title }
-			</li>
-		);
-	}
+function Movie({ title }) {
+  return (
+    <li>{title}</li>
+  );
 }
 
 Movie.propTypes = {
-	title: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
 };
 
 export default Movie;
