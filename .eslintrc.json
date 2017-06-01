@@ -43,6 +43,9 @@
         "eqeqeq": "error",
         "vars-on-top": "error",
         "strict": "error",
-        "no-lonely-if": "error"
+        "no-lonely-if": "error",
+				"react/prefer-stateless-function": [0, { "ignorePureComponents": "ignorePureComponents" }],
+				"react/jsx-indent": [2, "tab"],
+				"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
     }
 }
