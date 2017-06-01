@@ -11,9 +11,9 @@
     "lint": "./node_modules/.bin/eslint . --ext .js --quiet"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "lodash": "^4.17.4"
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
     "atom-linter": "^10.0.0",
